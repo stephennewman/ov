@@ -1,0 +1,12 @@
+{
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "installCommand": "npm install",
+  "framework": "nextjs",
+  "env": {
+    "NEXT_PUBLIC_SUPABASE_URL": "https://qmpogeboufwkyotposyz.supabase.co",
+    "NEXT_PUBLIC_SUPABASE_ANON_KEY": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFtcG9nZWJvdWZ3a3lvdHBvc3l6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjI4ODU4OTgsImV4cCI6MjA3ODQ2MTg5OH0.aZkp5KDgO-9nxDdjPMvUXjxJQwbvB6I3EqxmZ_BqoQQ",
+    "NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY": "pk_dev_MR6FbUQfwlYGqLPGnOuDcDty-0dMVa5RvYFbzYfV2uzdyu4v2ZuMC90liGjVQx5n"
+  }
+}
+

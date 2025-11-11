@@ -91,31 +91,28 @@ To github.com:stephennewman/ov.git
 
 ---
 
-## 🚀 Next Steps to Deploy to Vercel
+## 🚀 LIVE PRODUCTION DEPLOYMENT ✅
 
-1. **Push to GitHub** (manual):
-   ```bash
-   cd /Users/stephennewman/ov
-   git push origin main
-   ```
+**Deployed to:** krezzo2 account on Vercel
+**Status:** ● Ready (Production)
+**Build Duration:** 27 seconds
 
-2. **Connect to Vercel:**
-   - Go to https://vercel.com
-   - Import GitHub repository: `stephennewman/ov`
-   - Framework: Next.js (auto-detected)
-   - Build command: `npm run build` (auto-detected)
+### **Live URLs:**
+- **Primary:** https://ov-theta.vercel.app ✅
+- **Team:** https://ov-krezzo2.vercel.app ✅
+- **Git Branch:** https://ov-git-main-krezzo2.vercel.app ✅
 
-3. **Add Environment Variables in Vercel:**
-   ```
-   NEXT_PUBLIC_SUPABASE_URL=https://qmpogeboufwkyotposyz.supabase.co
-   NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGc...
-   NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY=pk_dev_MR6FbUQ...
-   ```
+### **Deployment Details:**
+- **Deployment ID:** dpl_B7Wrko9WUxLHyt38NV1skcL3ZC1q
+- **Framework:** Next.js 16.0.1 (auto-detected)
+- **Build Command:** `npm run build`
+- **Region:** iad1 (US East)
+- **Created:** November 11, 2025
 
-4. **Deploy!** 🚀
-   - Click "Deploy"
-   - Wait ~2 minutes
-   - Your app will be live at `outcomeview.vercel.app`
+### **Environment Variables (Configured):**
+✅ NEXT_PUBLIC_SUPABASE_URL
+✅ NEXT_PUBLIC_SUPABASE_ANON_KEY
+✅ NEXT_PUBLIC_LIVEBLOCKS_PUBLIC_KEY
 
 ---
 
