@@ -103,7 +103,9 @@ To github.com:stephennewman/ov.git
 - **Git Branch:** https://ov-git-main-krezzo2.vercel.app ✅
 
 ### **Deployment Details:**
+- **Project ID:** prj_EEcB5ffwx0u864qEFcIiAjFng2Rw
 - **Deployment ID:** dpl_B7Wrko9WUxLHyt38NV1skcL3ZC1q
+- **Team/Org ID:** team_JeIdP0zsf4Qi92tURFFkDEHW (krezzo2)
 - **Framework:** Next.js 16.0.1 (auto-detected)
 - **Build Command:** `npm run build`
 - **Region:** iad1 (US East)
