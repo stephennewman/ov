@@ -571,7 +571,7 @@ export default function TVView2({ activities = [] }: TVView2Props) {
 
 // Helper Components
 function SectionHeader({ icon: Icon, title, subtitle, color }: any) {
-  const colors = {
+  const colors: Record<string, string> = {
     blue: 'from-blue-500 to-cyan-500',
     yellow: 'from-yellow-500 to-orange-500',
     green: 'from-green-500 to-emerald-500',
@@ -581,7 +581,7 @@ function SectionHeader({ icon: Icon, title, subtitle, color }: any) {
     <motion.div
       initial={{ opacity: 0, y: -10 }}
       animate={{ opacity: 1, y: 0 }}
-      className={`bg-gradient-to-r ${colors[color]} rounded-lg p-2 text-white`}
+      className={`bg-gradient-to-r ${colors[color] || colors.blue} rounded-lg p-2 text-white`}
     >
       <div className="flex items-center gap-2">
         <Icon className="w-4 h-4" />
@@ -595,7 +595,7 @@ function SectionHeader({ icon: Icon, title, subtitle, color }: any) {
 }
 
 function MiniStatCard({ icon: Icon, label, value, color }: any) {
-  const colors = {
+  const colors: Record<string, string> = {
     yellow: 'from-yellow-500 to-amber-600 dark:from-yellow-600 dark:to-amber-700',
     red: 'from-red-500 to-rose-600 dark:from-red-600 dark:to-rose-700',
     orange: 'from-orange-500 to-red-600 dark:from-orange-600 dark:to-red-700',
@@ -606,7 +606,7 @@ function MiniStatCard({ icon: Icon, label, value, color }: any) {
     <motion.div
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
-      className={`bg-gradient-to-br ${colors[color]} rounded-lg p-2 text-white text-center`}
+      className={`bg-gradient-to-br ${colors[color] || colors.cyan} rounded-lg p-2 text-white text-center`}
     >
       <Icon className="w-3.5 h-3.5 mx-auto mb-0.5 opacity-90" />
       <div className="text-xl font-bold">{value}</div>
@@ -616,14 +616,14 @@ function MiniStatCard({ icon: Icon, label, value, color }: any) {
 }
 
 function StatPill({ label, value, color }: any) {
-  const colors = {
+  const colors: Record<string, string> = {
     blue: 'bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-300',
     yellow: 'bg-yellow-100 dark:bg-yellow-900 text-yellow-700 dark:text-yellow-300',
     cyan: 'bg-cyan-100 dark:bg-cyan-900 text-cyan-700 dark:text-cyan-300',
   };
 
   return (
-    <div className={`${colors[color]} rounded-lg p-1.5 text-center`}>
+    <div className={`${colors[color] || colors.blue} rounded-lg p-1.5 text-center`}>
       <div className="text-base font-bold">{value}</div>
       <div className="text-[8px] font-medium">{label}</div>
     </div>

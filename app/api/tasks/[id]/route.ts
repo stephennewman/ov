@@ -3,9 +3,11 @@ import { updateTaskStatus } from '@/lib/supabase';
 
 export async function PATCH(
   request: Request,
-  { params }: { params: { id: string } }
+  { params }: { params: Promise<{ id: string }> }
 ) {
   try {
+    // In Next.js 16, params is now a Promise
+    const { id } = await params;
     const { status, userId } = await request.json();
     
     if (!status || !userId) {
@@ -15,7 +17,7 @@ export async function PATCH(
       );
     }
 
-    const data = await updateTaskStatus(params.id, status, userId);
+    const data = await updateTaskStatus(id, status, userId);
     
     return NextResponse.json({ data });
   } catch (error: any) {

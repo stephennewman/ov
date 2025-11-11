@@ -408,7 +408,7 @@ export default function TVView({ activities = [] }: TVViewProps) {
 }
 
 function StatCard({ icon: Icon, label, value, color, delay }: any) {
-  const colors = {
+  const colors: Record<string, string> = {
     green: 'from-green-500 to-emerald-600 dark:from-green-600 dark:to-emerald-700',
     yellow: 'from-yellow-500 to-amber-600 dark:from-yellow-600 dark:to-amber-700',
     blue: 'from-blue-500 to-cyan-600 dark:from-blue-600 dark:to-cyan-700',
@@ -420,7 +420,7 @@ function StatCard({ icon: Icon, label, value, color, delay }: any) {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ delay }}
-      className={`bg-gradient-to-br ${colors[color]} rounded-lg p-2 text-white`}
+      className={`bg-gradient-to-br ${colors[color] || colors.blue} rounded-lg p-2 text-white`}
     >
       <Icon className="w-3 h-3 opacity-75 mb-0.5" />
       <div className="text-xl font-bold">{value}</div>

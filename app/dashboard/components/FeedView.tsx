@@ -139,7 +139,7 @@ export default function FeedView({ activities }: FeedViewProps) {
                       <div
                         key={i}
                         className="w-6 h-6 rounded-full border-2 border-white dark:border-zinc-900 flex items-center justify-center text-[8px] font-bold text-white"
-                        style={{ backgroundColor: user.color }}
+                        style={{ backgroundColor: user.role_color }}
                       >
                         {user.role}
                       </div>
