@@ -1,0 +1,11 @@
+<svg width="260" height="260" viewBox="0 0 260 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Icon only version -->
+  <rect width="260" height="260" rx="40" fill="white"/>
+  
+  <!-- Black Circle -->
+  <circle cx="75" cy="162" r="50" fill="#000000"/>
+  
+  <!-- Blue Triangle -->
+  <path d="M80 40 L215 132 L80 132 Z" fill="#5B8DEE"/>
+</svg>
+

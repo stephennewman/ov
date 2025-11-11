@@ -1,0 +1,14 @@
+<svg width="1400" height="350" viewBox="0 0 1400 350" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Logo Icon Container -->
+  <rect x="80" y="68" width="260" height="260" rx="40" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  
+  <!-- Black Circle -->
+  <circle cx="155" cy="230" r="50" fill="#000000"/>
+  
+  <!-- Blue Triangle -->
+  <path d="M160 108 L295 200 L160 200 Z" fill="#5B8DEE"/>
+  
+  <!-- outcomeview Text -->
+  <text x="365" y="235" font-family="system-ui, -apple-system, sans-serif" font-size="120" font-weight="500" fill="#4B5563" letter-spacing="-2">outcomeview</text>
+</svg>
+
